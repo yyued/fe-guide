@@ -2,11 +2,7 @@
 
 ---
 
-HTML规范指南。本文档参考了： 
-
-1. [bootcss编码规范](http://codeguide.bootcss.com/)
-2. [Google HTML编码规范](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
-3. [spec HTML编码规范](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)
+HTML规范指南。
 
 ---
 
@@ -382,5 +378,11 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 <!-- #post end -->
 ```
 
-
 **[[⬆]](#)**
+
+
+参考资料： 
+
+1. [bootcss编码规范](http://codeguide.bootcss.com/)
+2. [Google HTML编码规范](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+3. [spec HTML编码规范](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)
