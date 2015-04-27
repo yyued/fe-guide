@@ -543,10 +543,10 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 
 **【强制】** 使用 `transition` 定义属性时应遵循以下顺序：
 
-1. [ transition-property ]：检索或设置对象中的参与过渡的属性；
-2. [ transition-duration ]：检索或设置对象过渡的持续时间；
-3. [ transition-timing-function ]：检索或设置对象中过渡的动画类型；
-4. [ transition-delay ]：检索或设置对象延迟过渡的时间；
+1. `[ transition-property ]`：检索或设置对象中的参与过渡的属性；
+2. `[ transition-duration ]`：检索或设置对象过渡的持续时间；
+3. `[ transition-timing-function ]`：检索或设置对象中过渡的动画类型；
+4. `[ transition-delay ]`：检索或设置对象延迟过渡的时间；
 
 `transition：[ transition-property ] || [ transition-duration ] || [ transition-timing-function ] || [ transition-delay ]`
 
