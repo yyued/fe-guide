@@ -8,9 +8,10 @@
 
 **【强制】** 所有资源类型必须按以下目录放置；
 
-* **doc** 与 **swf** 不会默认生成；
+* **doc** 、**font** 、**swf** 不会默认生成；
 * 当该项目为中大型项目或长期维护项目时，请手动添加**doc**目录，并且填写相关文档；
-* 当该项目有需要flash文件时，请手动添加**swf**目录放置flash文件；
+* 当该项目有需要使用web字体时时，请手动添加**font**目录放置字体文件，如有多个字体，请分开文件夹存放；
+* 当该项目有需要使用flash文件时，请手动添加**swf**目录放置flash文件；
 
 
 ```html
@@ -26,6 +27,9 @@ src/                                # static resource directory
 |   |-- html.md                     # html document
 |   |-- js.md                       # javascript document
 |   |-- README.md                   # general documentation
+|   ...
+|
+|-- font/                           # all web fonts
 |   ...
 |
 |-- img/                            # all images
