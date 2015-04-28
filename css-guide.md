@@ -43,10 +43,9 @@ CSS编码风格指南。
 
 ### 1.3 命名空间
 
-**【强制】** 使用命名空间。页面结构类型可大致划分为以下几种：布局类、区块模块类、（可复用的）组件类、工具类、状态类、情景类：
+**【强制】** 使用命名空间；
 
 * **布局**：以`g`(Grid)作为命名空间，例如：`.g-wrap` 、`.g-header`、`.g-content`、`.g-mian`、`.g-aside` 等；
-* **模块**：以`b`(Block)作为命名空间，例如`.b-financial` 等；
 * **组件**：以`ui`(UI)作为命名空间，例如：`.ui-newsList`、`.ui-dropMenu`、`.ui-slider` 等；
 * **工具**：以`u`(Util)作为命名空间，例如：`.u-clearfix`、`.u-left`、`.u-ellipsis ` 等；
 * **状态**：以`is`作为命名空间，例如：`.is-open`、`.is-active`、`.is-selected ` 等；
@@ -58,6 +57,26 @@ CSS编码风格指南。
 * **图标**：以`ico`作为命名空间，例如：`.ico-close` 等；
 * **LOGO**：以`logo`作为命名空间，例如：`.logo-duowan` 等；
 * **内容图像**：以`img`作为命名空间，例如：`.img-userGuide` 等；
+
+### 1.5 区块命名
+
+**【推荐】** 一般区块都可以划分为头部、身体和尾部，因此建议给你的区块分别以 `.xxx-hd`、`.xxx-bd`、`.xxx-ft`来划分；
+
+示例：
+
+```css
+.ui-card-hd {
+    margin: 0;
+}
+
+.ui-card-bd {
+    margin: 0;
+}
+
+.ui-card-ft {
+    margin: 0;
+}
+```
 
 
 **[[⬆]](#)**
@@ -73,12 +92,12 @@ CSS编码风格指南。
 
 ```css
 /* Not so great */
-.element {
+.selector {
   margin: 0;
 }
 
 /* Better */
-.element {
+.selector {
     margin: 0;
 }
 ```
@@ -90,11 +109,11 @@ CSS编码风格指南。
 
 ```css
 /* Not so great */
-.element{
+.selector{
 }
 
 /* Better */
-.element {
+.selector {
 }
 ```
 
@@ -178,10 +197,10 @@ box-shadow: 0 0 2px rgba(0, 128, 0, .3);
 
 ```css
 /* Not so great */
-.element { margin: 0; padding: 0;}
+.selector { margin: 0; padding: 0;}
 
 /* Better */
-.element {
+.selector {
     margin: 0;
     padding: 0;
 }
@@ -193,12 +212,12 @@ box-shadow: 0 0 2px rgba(0, 128, 0, .3);
 
 ```css
 /* Not so great */
-.element {
+.selector {
     margin: 0
 }
 
 /* Better */
-.element {
+.selector {
     margin: 0;
 }
 ```
@@ -297,7 +316,7 @@ article[character="juliet"] {
 如果你只需定义其中的一两个属性，而不是全部，尽量分开来写：
 ```css
 /* Better */
-.element {
+.selector {
     margin-bottom: 10px;
     background-color: red;
     background-image: url(image.jpg);
@@ -306,7 +325,7 @@ article[character="juliet"] {
 }
 
 /* Not so great */
-.element {
+.selector {
     margin: 0 0 10px;
     background: red;
     background: url(image.jpg);
@@ -351,12 +370,12 @@ html[lang|="zh"] q:after {
 
 ```css
 /* Not so great */
-.element {
+.selector {
     opacity: 0.8;
 }
 
 /* Better */
-.element {
+.selector {
     opacity: .8;
 }
 ```
@@ -369,12 +388,12 @@ html[lang|="zh"] q:after {
 
 ```css
 /* Not so great */
-.element {
+.selector {
     margin: 0px 10px;
 }
 
 /* Better */
-.element {
+.selector {
     margin: 0 10px;
 }
 ```
@@ -387,12 +406,12 @@ html[lang|="zh"] q:after {
 
 ```css
 /* Not so great */
-.element {
+.selector {
     background: url("bg.png");
 }
 
 /* Better */
-.element {
+.selector {
     background: url(bg.png);
 }
 ```
@@ -405,14 +424,14 @@ html[lang|="zh"] q:after {
 
 ```css
 /* Not so great */
-.element {
+.selector {
     box-shadow: 0 0 2px rgba(0,128,0,.3);
     border-color: rgb(0, 128, 0);
     color: gray;
 }
 
 /* Better */
-.element {
+.selector {
     box-shadow: 0 0 2px rgba(0, 128, 0, .3);
     border-color: #008000;
     color: #999;
@@ -425,12 +444,12 @@ html[lang|="zh"] q:after {
 
 ```css
 /* Not so great */
-.element {
+.selector {
     color: #0073AA;
 }
 
 /* Better */
-.element {
+.selector {
     color: #0073aa;
 }
 ```
@@ -445,12 +464,12 @@ html[lang|="zh"] q:after {
 
 ```css
 /* Not so great */
-.element {
+.selector {
     background-position: top; /* 50% 0% */
 }
 
 /* Better */
-.element {
+.selector {
     background-position: center top; /* 50% 0% */
 }
 ```
@@ -525,12 +544,12 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 
 ```css
 /* Not so great */
-.element {
+.selector {
     font-weight: bold;
 }
 
 /* Better */
-.element {
+.selector {
     font-weight: 700;
 }
 ```
@@ -556,12 +575,12 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 
 ```css
 /* Not so great */
-.element {
+.selector {
     transition: color .2s 0 ease-in;
 }
 
 /* Better */
-.element {
+.selector {
     transition: color .2s ease-in 0;
 }
 ```
@@ -630,14 +649,14 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 
 ```css
 /* Not so great */
-.element {
+.selector {
     transition: color .2s ease-in 0;
     -webkit-transition: color .2s ease-in 0;
     -moz-transition: color .2s ease-in 0;
 }
 
 /* Better */
-.element {
+.selector {
     -webkit-transition: color .2s ease-in 0;
        -moz-transition: color .2s ease-in 0;
             transition: color .2s ease-in 0;
