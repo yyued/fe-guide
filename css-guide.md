@@ -22,13 +22,13 @@ CSS编码风格指南。
 
 ### 1.1 命名思想
 
-**【强制】** 区块、模块、组件等一个整个的结构遵循改良版的BEM命名规则，`Block__Element--Modifier`；
+**【强制】** 区块、模块、组件等一个整个的结构遵循BEM命名思想；
 
 当你能确定组件内最后一级的结构不会再发生变化时，最后一级可省略类名，使用两层嵌套；
 
 * `.block` 代表了更高级别的抽象或组件；
 * `.block__element` 代表`.block`的后代，用于形成一个完整的`.block`的整体；
-* `.block--modifier` 代表`.block`的修饰符。
+* `.is-` | `.has-` | `.exp` 代表`.block`的修饰符。
 
 参考资料：
 
@@ -49,31 +49,31 @@ CSS编码风格指南。
 * **组件**：以`ui`(UI)作为命名空间，例如：`.ui-newsList`、`.ui-dropMenu`、`.ui-slider` 等；
 * **工具**：以`u`(Util)作为命名空间，例如：`.u-clearfix`、`.u-left`、`.u-ellipsis ` 等；
 * **状态**：以`is`作为命名空间，例如：`.is-open`、`.is-active`、`.is-selected ` 等；
-* **情景**：以`has`作为命名空间，例如：`.has-checkbox` 等；
+
+如果`is`状态类不能满足你的实际需求，还可以使用`has`、`exp`等作为前缀表示扩展派生类；
 
 ### 1.4 图片命名
 
-* **背景**：以`bg`作为命名空间，例如：`.bg-body` 等；
 * **图标**：以`ico`作为命名空间，例如：`.ico-close` 等；
 * **LOGO**：以`logo`作为命名空间，例如：`.logo-duowan` 等；
 * **内容图像**：以`img`作为命名空间，例如：`.img-userGuide` 等；
 
 ### 1.5 区块命名
 
-**【推荐】** 一般区块都可以划分为头部、身体和尾部，因此建议给你的区块分别以 `.xxx-hd`、`.xxx-bd`、`.xxx-ft`来划分；
+**【推荐】** 一般区块都可以划分为头部、身体和尾部，因此建议给你的区块分别以 `hd`、`bd`、`ft`来划分；
 
 示例：
 
 ```css
-.ui-card-hd {
+.ui-card__hd {
     margin: 0;
 }
 
-.ui-card-bd {
+.ui-card__bd {
     margin: 0;
 }
 
-.ui-card-ft {
+.ui-card__ft {
     margin: 0;
 }
 ```
