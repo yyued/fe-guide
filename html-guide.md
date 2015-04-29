@@ -33,10 +33,10 @@ HTML规范指南。
 
 ```html
 <!-- Not so great -->
-<img src="./img/avatar.png" alt='avatar' class='avatar'>
+<img class='avatar' src="./img/avatar.png" alt='avatar'>
 
 <!-- Better -->
-<img src="./img/avatar.png" alt="avatar" class="avatar">
+<img class="avatar" src="./img/avatar.png" alt="avatar">
 ```
 
 ### 2.2 属性大小写
