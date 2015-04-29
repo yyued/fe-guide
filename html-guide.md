@@ -363,7 +363,10 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
 **【建议】**对**超过10行**的页面模块进行注释, 以降低开发人员的嵌套成本和后期的维护成本。建议使用结尾注释方式，例如：
 
+当模块代码量较少时，可以省略 `start`。
+
 ```html
+<!-- 文章内容 start -->
 <section id="post">
    do some things...
 </section>
@@ -372,6 +375,7 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
 或者标注模块的class或者id：
 ```html
+<!-- #post start -->
 <section id="post">
     do some things...
 </section>
