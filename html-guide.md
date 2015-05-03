@@ -177,7 +177,6 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
     <li><del><code>center</code></del></li>
     <li><del><code>font</code></del></li>
     <li><del><code>isindex</code></del></li>
-    <li><del><code>menu</code></del></li>
     <li><del><code>tt</code></del></li>
     <li><del><code>u</code></del></li>
 </ul>

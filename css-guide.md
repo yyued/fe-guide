@@ -28,7 +28,7 @@ CSS编码风格指南。
 
 * `.block` 代表了更高级别的抽象或组件；
 * `.block__element` 代表`.block`的后代，用于形成一个完整的`.block`的整体；
-* `.is-` | `.has-` | `.exp` 代表`.block`的修饰符。
+* `.is-` | `.has-` | `.ext` 代表`.block`的修饰符。
 
 参考资料：
 
@@ -46,11 +46,11 @@ CSS编码风格指南。
 **【强制】** 使用命名空间；
 
 * **布局**：以`g`(Grid)作为命名空间，例如：`.g-wrap` 、`.g-header`、`.g-content`、`.g-mian`、`.g-aside` 等；
-* **组件**：以`ui`(UI)作为命名空间，例如：`.ui-newsList`、`.ui-dropMenu`、`.ui-slider` 等；
-* **工具**：以`u`(Util)作为命名空间，例如：`.u-clearfix`、`.u-left`、`.u-ellipsis ` 等；
-* **状态**：以`is`作为命名空间，例如：`.is-open`、`.is-active`、`.is-selected ` 等；
+* **组件**：以`ui`(UI)或者可代表具体业务名称的简短标识作为命名空间，例如：`.ui-newsList`、`.ui-dropMenu`、`.dsp-slider`(DSP管理平台中的幻灯片) 等；
+* **工具**：以`u`(Util)作为命名空间，例如：`.u-clearfix`、`.u-left`、`.u-ellipsis` 等；
+* **状态**：以`is`作为命名空间，例如：`.is-open`、`.is-active`、`.is-selected` 等；
 
-如果`is`状态类不能满足你的实际需求，还可以使用`has`、`exp`等作为前缀表示扩展派生类；
+如果`is`状态类不能满足你的实际需求，还可以使用`has`、`ext`等作为前缀表示扩展派生类；
 
 ### 1.4 图片命名
 
