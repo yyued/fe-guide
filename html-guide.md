@@ -92,7 +92,7 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 示例：
 
 ```html
-<input type="button" data-role="getPic">
+<input data-role="getPic" type="button">
 ```
 
 ### 2.6 链接属性
@@ -338,7 +338,7 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 ```html
 <label><input name="confirm" type="checkbox" value="on"> 我已确认上述条款</label>
 
-<label for="username">用户名：</label> <input id="username" name="username" type="textbox">
+<label for="username">用户名：</label> <input id="username" name="username" type="checkbox">
 ```
 
 **【建议】**尽量不要使用按钮类元素的 name 属性；

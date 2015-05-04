@@ -20,6 +20,12 @@ CSS编码风格指南。
 
 ## 1 命名规范
 
+该命名规范主要解决以下问题：
+
+* 从类名可以清晰区分出其功能作用，使页面结构清晰【命名空间、标识符】；
+* 以组件、模块的思想去写一个区块的结构，强化结构的模块化【BEM模块思想、基类、扩展类】；
+* 减少多人合作、项目耦合等情况下的命名冲突【命名空间】；
+
 ### 1.1 命名思想
 
 **【强制】** 区块、模块、组件等一个整个的结构遵循BEM命名思想；
@@ -28,12 +34,13 @@ CSS编码风格指南。
 
 * `.block` 代表了更高级别的抽象或组件；
 * `.block__element` 代表`.block`的后代，用于形成一个完整的`.block`的整体；
-* `.is-` | `.has-` | `.ext` 代表`.block`的修饰符。
+* `.is-` | `.has-` | `.ext-` 代表`.block`的修饰符，**不使用双中划线`--`**。
 
 参考资料：
 
 * [BEM—源自Yandex的CSS 命名方法论](http://segmentfault.com/a/1190000000391762)
 * [BEM官网](http://bem.info/)
+
 
 ### 1.2 多单词连接
 
@@ -273,10 +280,10 @@ p.danger-message {
 
 **【建议】** 同一 rule set 下的属性在书写时，应按功能进行分组，并以 Formatting Model > Box Model > Typographic > Visual 的顺序书写，以提高代码的可读性。
 
-1. Positioning Model 布局方式、位置；相关属性包括：`position / top / right / bottom / left / float / display / overflow / ...`
-2. Box model 盒模型；相关属性包括：`border / margin / padding / width / height / ...`
+1. Positioning Model 布局方式、位置；相关属性包括：`position / top / right / bottom / left / z-index  / display / float / ...`
+2. Box model 盒模型；相关属性包括：`width / height / padding / margin / border / overflow /  ...`
 3. Typographic 文本排版；相关属性包括：`font / line-height / text-align / word-wrap / ...`
-4. Visual 视觉外观；相关属性包括：`background / color / transition / list-style / ...`
+4. Visual 视觉外观；相关属性包括：`color / background / list-style / transform / animation / transition  / ...`
 5. 如果包含 content 属性，应放在最前面；
 
 Positioning 处在第一位，因为他可以使一个元素脱离正常文本流，并且覆盖盒模型相关的样式。盒模型紧跟其后，因为他决定了一个组件的大小和位置。其他属性只在组件 内部 起作用或者不会对前面两种情况的结果产生影响，所以他们排在后面。
