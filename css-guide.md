@@ -23,7 +23,7 @@ CSS编码风格指南。
 该命名规范主要解决以下问题：
 
 * 从类名可以清晰区分出其功能作用，使页面结构清晰【命名空间、标识符】；
-* 以组件、模块的思想去写一个区块的结构，强化结构的模块化【BEM模块思想、基类、扩展类】；
+* 以组件、模块的思想去写一个区块的结构，强化结构的模块化【BEM模块思想、基类、子类、扩展类】；
 * 减少多人合作、项目耦合等情况下的命名冲突【命名空间】；
 
 ### 1.1 命名思想
@@ -36,7 +36,7 @@ CSS编码风格指南。
 * `.block__element` 代表`.block`的后代，用于形成一个完整的`.block`的整体；
 * `.is-` | `.has-` | `.ext-` 代表`.block`的修饰符，**不使用双中划线`--`**。
 
-参考资料：
+相关链接：
 
 * [BEM—源自Yandex的CSS 命名方法论](http://segmentfault.com/a/1190000000391762)
 * [BEM官网](http://bem.info/)
@@ -84,6 +84,10 @@ CSS编码风格指南。
     margin: 0;
 }
 ```
+
+#### 附：命名示例
+
+<img src="https://cloud.githubusercontent.com/assets/1295348/7456687/0643f254-f2b9-11e4-9b14-f1b36257f9a3.jpg" alt="命名示例" width="600">
 
 
 **[[⬆]](#)**
@@ -727,4 +731,4 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 
 1. [bootcss编码规范](http://codeguide.bootcss.com/)
 2. [豆瓣CSS Code Guideline](https://github.com/kejun/CSS-Code-Guideline)
-2. [spec css style guide](https://github.com/kejun/CSS-Code-Guideline)
+2. [spec css style guide](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)
