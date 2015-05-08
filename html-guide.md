@@ -191,7 +191,9 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
 ### 4.1 doctype
 
-**【强制】**doctype使用 HTML5 的 doctype 来启用标准模式，建议使用大写的 DOCTYPE； [关于doctype该使用大写还是小写的讨论](http://stackoverflow.com/questions/7020961/uppercase-or-lowercase-doctype)
+**【强制】**doctype使用 HTML5 的 doctype 来启用标准模式。
+
+其中 `doctype` 建议使用大写的 DOCTYPE； [关于doctype该使用大写还是小写的讨论](http://stackoverflow.com/questions/7020961/uppercase-or-lowercase-doctype)
 
 示例：
 
