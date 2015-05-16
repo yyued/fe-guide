@@ -259,7 +259,7 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 示例：
 
 ```html
-<link rel="shortcut icon" href="path/to/favicon.ico">
+<link type="image/x-icon" rel="shortcut icon" href="path/to/favicon.ico">
 ```
 
 #### 附：工作流中默认的PC端head设定
