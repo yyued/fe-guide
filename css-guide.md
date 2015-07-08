@@ -58,7 +58,7 @@ CSS编码风格指南。
 * **组件**：以`ui`或者`mod`为命名空间，**表示可复用、移植的组件模块**，例如：`.ui-slider`、`.mod-dropMenu`等；
 * **扩展**：以`ext`为命名空间，**表示对组件基类的视觉形态的扩展**，例如：`.ext-cover、`、`.ext-alignLeft` 等；
 
-**注意：状态类或扩展类不允许单独使用。举个例子，同一个页面有可能会在不同的地方都会使用`is-active`，并且各自的`is-active`的是不同的，所以要使用`.ui-userCard.is-active` 或 `.ui-userCard .is-active`来定义。**
+**状态类或扩展类一般出现在组件的父级节点，并且不允许单独使用。举个例子，同一个页面有可能会在不同的地方都会使用`is-active`，并且每个`is-active`所操纵的节点的是不同的，所以要使用`.ui-userCard.is-active` 或 `.ui-userCard .is-active`来定义**
 
 ### 1.4 图片命名
 
