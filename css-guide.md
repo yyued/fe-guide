@@ -50,16 +50,15 @@ CSS编码风格指南。
 
 ### 1.3 命名空间
 
-**【强制】** 使用命名空间；
+**【强制】** 在合适的地方使用命名空间；
 
-* **布局**：以`g`(Grid)作为命名空间，例如：`.g-wrap` 、`.g-header`、`.g-content`、`.g-mian`、`.g-aside` 等；
-* **组件**：以`ui`(UI)或者可代表具体业务名称的简短标识作为命名空间，例如：`.ui-newsList`、`.ui-dropMenu`、`.dsp-slider`(DSP管理平台中的幻灯片) 等；
-* **工具**：以`u`(Util)作为命名空间，例如：`.u-clearfix`、`.u-left`、`.u-ellipsis` 等；
-* **状态**：以`is`作为命名空间，例如：`.is-open`、`.is-active`、`.is-selected` 等；
+* **布局**：以`g`为命名空间，例如：`.g-wrap` 、`.g-header`、`.g-content`、`.g-mian`、`.g-aside` 等；
+* **工具**：以`u`为命名空间，**表示不耦合业务逻辑的、可复用的的工具**，例如：`.u-clearfix`、`.u-ellipsis` 等；
+* **状态**：以`is`为命名空间，**表示动态的、具有交互性质的状态**，例如：`.is-open`、`.is-active`、`.is-selected` 等；
+* **组件**：以`ui`或者`mod`为命名空间，**表示可复用、移植的组件模块**，例如：`.ui-slider`、`.mod-dropMenu`等；
+* **扩展**：以`ext`为命名空间，**表示对组件基类的视觉形态的扩展**，例如：`.ext-cover、`、`.ext-alignLeft` 等；
 
-如果`is`状态类不能满足你的实际需求，还可以使用`has`、`ext`等作为前缀表示扩展派生类；
-
-*注意*：状态类或扩展类不允许单独使用。举个例子，同一个页面有可能会在不同的地方都会使用`is-active`，并且各自的`is-active`的是不同的，所以要使用`.ui-userCard.is-active` 或 `.ui-userCard .is-active`来定义。
+**注意：状态类或扩展类不允许单独使用。举个例子，同一个页面有可能会在不同的地方都会使用`is-active`，并且各自的`is-active`的是不同的，所以要使用`.ui-userCard.is-active` 或 `.ui-userCard .is-active`来定义。**
 
 ### 1.4 图片命名
 
