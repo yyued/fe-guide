@@ -704,7 +704,7 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 示例：
 
 ```css
-/*
+/**
  * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
  */
 ```
@@ -714,7 +714,7 @@ CSS 的字重分 100 – 900 共九档，但目前受字体本身质量和浏览
 **【强制】** 文件顶部必须包含文件注释，用 `@file` 标识文件说明。星号要一列对齐，星号与内容之间必须保留一个空格，标识符冒号与内容之间必须保留一个空格；
 
 ```css
-/*
+/**
  * @file: 文件概要描述
  * @author: author-name(mail-name@domain.com)
  *          author-name2(mail-name2@domain.com)
