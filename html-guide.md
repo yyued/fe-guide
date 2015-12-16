@@ -276,6 +276,9 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
     <meta name="description" content="多玩游戏">
     <!-- a lot of elements -->
 </head>
+<body>
+    <!-- a lot of elements -->
+</body>
 </html>
 ```
 
@@ -293,6 +296,9 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
     <meta name="description" content="多玩游戏">
     <!-- a lot of elements -->
 </head>
+<body>
+    <!-- a lot of elements -->
+</body>
 </html>
 ```
 注意：当该项目有相关的app在app store中，设置meta`apple-itunes-app`，如上面最后一条，并填上对应的`app-id`。详细请看：[Promoting Apps with Smart App Banners](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html)
