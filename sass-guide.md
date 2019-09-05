@@ -13,6 +13,7 @@ SASS规范指南，SASS 代码的基本规范和原则与 [CSS 编码规范](htt
 3. [`@import` 语句](#3-import-语句)
 4. [变量](#4-变量)
 5. [继承](#5-继承)
+6. [BEM命名](#6-BEM命名)
 
 ## 1 编码
 
@@ -79,5 +80,31 @@ $card-color: #fff;
 .selector {
     @extend sameStyle;
     color: #fff;
+}
+```
+
+## 6 BEM命名
+
+**【强制】** SASS内使用BEM命名时，请勿使用缩写与嵌套；
+
+SASS BEM使用缩写会不利于名称搜索、排查定位；另外，BEM本来就是为了解决嵌套问题，因此没必要多此一举。
+
+示例：
+
+```css
+/* Not so great */
+.aside {
+    color: #fff;
+    &__item {
+        width: 100px;
+    }
+}
+
+/* Better */
+.aside {
+    color: #fff;
+}
+.aside__item {
+    width: 100px;
 }
 ```
