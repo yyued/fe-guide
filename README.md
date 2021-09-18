@@ -1,6 +1,6 @@
 # Web 前端规范指南
 
-YY UED前端规范指南系列
+Joyy UED 前端规范指南系列
 
 * [HTML规范指南](https://github.com/yyued/fe-guide/blob/master/html-guide.md) [V1.2.0]
 * [CSS规范指南](https://github.com/yyued/fe-guide/blob/master/css-guide.md) [V1.2.0]
